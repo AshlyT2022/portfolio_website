@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashly Thomas | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#2563eb55,transparent 70%);
+top:-200px;
+right:-150px;
+animation:move 12s infinite alternate;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#14b8a655,transparent 70%);
+bottom:-150px;
+left:-100px;
+animation:move2 10s infinite alternate;
+z-index:-1;
+}
+
+@keyframes move{
+to{
+transform:translate(-120px,100px);
+}
+}
+
+@keyframes move2{
+to{
+transform:translate(100px,-80px);
+}
+}
+
+header{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+max-width:900px;
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #38bdf8;
+object-fit:cover;
+margin-bottom:20px;
+box-shadow:0 0 40px #38bdf8;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+h1{
+font-family:Poppins;
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-weight:300;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#2563eb;
+border-radius:40px;
+color:white;
+text-decoration:none;
+transition:.4s;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#38bdf8;
+transform:translateY(-4px);
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#08101fcc;
+backdrop-filter:blur(12px);
+padding:18px;
+display:flex;
+justify-content:center;
+gap:40px;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:2.3rem;
+font-family:Poppins;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+margin-bottom:30px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.progress{
+height:10px;
+background:#1e293b;
+border-radius:30px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+}
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:25px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#08101f;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+font-size:28px;
+margin:10px;
+color:white;
+transition:.3s;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2.5rem;
+}
+
+.hero img{
+width:140px;
+height:140px;
+}
+
+nav{
+gap:15px;
+font-size:14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#research">Research</a>
+<a href="#skills">Skills</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<header>
+
+<div class="hero">
+
+<img src="profile.jpg" alt="Ashly Thomas">
+
+<h1>Ashly Thomas</h1>
+
+<h2>Assistant Professor • Researcher • Passionate Educator</h2>
+
+<p>
+Empowering students through technology, research, and lifelong learning.
+</p>
+
+<a class="btn" href="#about">Explore My Work</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+Assistant Professor in the Department of Computer Science and Engineering at
+<strong>St. Joseph's College of Engineering & Technology, Palai</strong>.
+
+<br><br>
+
+An enthusiastic learner, passionate teacher and dedicated researcher interested in
+
+Artificial Intelligence,
+Cyber Security,
+Blockchain,
+Big Data,
+Computer Networks,
+IoT,
+Wireless Networks and
+Data Analytics.
+
+<br><br>
+
+Committed to creating engaging learning experiences while contributing meaningful research to the computing community.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Education & Experience</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>Assistant Professor</h3>
+<p>SJCET Palai</p>
+<p>2012 – Present</p>
+</div>
+
+<div class="card">
+<h3>Assistant Professor</h3>
+<p>MES College of Engineering</p>
+<p>2011 – 2012</p>
+</div>
+
+<div class="card">
+<h3>Education</h3>
+<p>B.E. Computer Science & Engineering</p>
+<p>M.Tech. Network & Internet Engineering</p>
+<p>Ph.D. (Pursuing) – Big Data Security</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="title">Research Interests</h2>
+
+<div class="grid">
+
+<div class="card">Artificial Intelligence</div>
+<div class="card">Cyber Security</div>
+<div class="card">Blockchain</div>
+<div class="card">Big Data Security</div>
+<div class="card">Computer Networks</div>
+<div class="card">IoT</div>
+<div class="card">Data Analytics</div>
+<div class="card">Wireless Networks</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+
+Python
+
+<div class="progress">
+<span style="width:90%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Machine Learning
+
+<div class="progress">
+<span style="width:85%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Blockchain
+
+<div class="progress">
+<span style="width:80%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Cyber Security
+
+<div class="progress">
+<span style="width:90%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Data Analytics
+
+<div class="progress">
+<span style="width:82%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Teaching
+
+<div class="progress">
+<span style="width:100%"></span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="publications">
+
+<h2 class="title">Selected Publications</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>A Survey on Crime Analysis and Prediction</h3>
+<p>Materials Today Proceedings (2022)</p>
+</div>
+
+<div class="card">
+<h3>AIS: Video Surveillance Using Artificial Intelligence for Old-aged</h3>
+<p>IJERT (2023)</p>
+</div>
+
+<div class="card">
+<h3>Certificate Management and Validation System Using Blockchain</h3>
+<p>IRJET (2020)</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+<h3>Ashly Thomas</h3>
+
+<p>Assistant Professor</p>
+
+<p>Department of Computer Science & Engineering</p>
+
+<p>St. Joseph's College of Engineering & Technology</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+Email: ashly.thomas@sjcetpalai.ac.in
+</p>
+
+<br>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/ashly-thomas-77a64920b/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://sjcetpalai.ac.in/ashly-thomas-cse/" target="_blank">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ashly Thomas</p>
+
+<p>Designed with ❤️ using HTML, CSS & JavaScript</p>
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll('.card');
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:'translateY(60px)'},
+
+{opacity:1,transform:'translateY(0)'}
+
+],{
+
+duration:700,
+
+fill:'forwards'
+
+});
+
+}
+
+});
+
+});
+
+cards.forEach(card=>observer.observe(card));
+
+</script>
+
+</body>
+</html>
